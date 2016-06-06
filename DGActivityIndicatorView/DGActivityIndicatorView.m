@@ -84,9 +84,7 @@ static const CGFloat kDGActivityIndicatorDefaultSize = 40.0f;
 }
 
 - (void)startAnimating {
-    if (!self.layer.sublayers) {
-        [self setupAnimation];
-    }
+    [self setupAnimation];
     self.hidden = NO;
     self.layer.speed = 1.0f;
     _animating = YES;
